@@ -22,11 +22,11 @@
         </header>
 
         <form id="orderForm">
-            <input type="text" id="name" placeholder="الاسم الكامل" required>
-            <input type="email" id="email" placeholder="البريد الإلكتروني" required>
-            <input type="tel" id="phone" placeholder="رقم الهاتف" required>
-            <input type="text" id="doctor" placeholder="اسم الطبيب ورقم العيادة" required>
-            <input type="text" id="patient" placeholder="اسم المريض">
+            <div class="form-group"><input type="text" id="name" placeholder="الاسم الكامل" required></div>
+            <div class="form-group"><input type="email" id="email" placeholder="البريد الإلكتروني" required></div>
+            <div class="form-group"><input type="tel" id="phone" placeholder="رقم الهاتف" required></div>
+            <div class="form-group"><input type="text" id="doctor" placeholder="اسم الطبيب ورقم العيادة" required></div>
+            <div class="form-group"><input type="text" id="patient" placeholder="اسم المريض"></div>
 
             <div class="form-row">
                 <div class="form-group">
@@ -47,10 +47,14 @@
                 </div>
             </div>
 
-            <label for="date" id="lblDate">تاريخ التسليم المطلوب</label>
-            <input type="date" id="date" required>
+            <div class="form-group">
+                <label for="date" id="lblDate">تاريخ التسليم المطلوب</label>
+                <input type="date" id="date" required>
+            </div>
 
-            <textarea id="notes" rows="3" placeholder="ملاحظات إضافية وتفاصيل اللون..."></textarea>
+            <div class="form-group">
+                <textarea id="notes" rows="3" placeholder="ملاحظات إضافية وتفاصيل اللون..."></textarea>
+            </div>
 
             <div class="form-group file-upload">
                 <label for="files" id="lblFiles">📸 إرفاق صور أو ملفات الحالات (اختياري)</label>
